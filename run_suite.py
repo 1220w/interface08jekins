@@ -16,4 +16,5 @@ with open(file_to, "wb")as f:
     runner = HTMLTestRunner(f, title ="我的测试报告",description="v1.0")
     # runner = unittest.TextTestRunner()
 
-runner.run(suite)
+    runner.run(suite)
+
