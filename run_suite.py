@@ -20,8 +20,10 @@ suite = unittest.TestSuite()
 suite.addTest(unittest.makeSuite(TestUser))
 
 #先创建文件
-file_to = "./report/report" + time.strftime("%Y%m%d%H%M%S") + ".html"#为文件名称添加时间戳，以避免文件覆盖
+file_to = "./report/report.html"
+# file_to = "./report/report" + time.strftime("%Y%m%d%H%M%S") + ".html"#为文件名称添加时间戳，以避免文件覆盖
 # 打开文件流，工具执行套件，并将结果写出
 with open(file_to,"wb") as f:
     runner = HTMLTestRunner(f, title="我的测试报告", description="V1.0")
     runner.run(suite)
+print("胡沈员好帅")
